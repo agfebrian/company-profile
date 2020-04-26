@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    margin: 50px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.box-items {
+    width: 400px;
+    height: auto;
+    margin: 10px;
+}
+.box-items:hover {
+    box-shadow: 5px 5px 30px 5px grey;
+}
+.box-item {
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.box-item img {
+    width: 350px;
+    height: 250px;
+    background-size: contain;
+}
+.box-item p.cards-header {
+    font-size: 1.5em;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.box-item p.cards-content {
+    text-align: left;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 10px;
+}
+.box-item p.cards-category {
+    font-size: 0.8em;
+    margin-bottom: 5px;
+}
+.box-item p.cards-times {
+    font-size: 0.8em;
+    margin-bottom: 5px;
+}
+.btn-detail {
+    padding: 3px;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    font-size: 0.7em;
+}
+.btn-edit {
+    padding: 3px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    font-size: 0.7em;
+}
+.btn-del {
+    padding: 3px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    font-size: 0.7em;
+}
+

@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+/* ================================= Header =============================== */
+.hidden-menu .btn-dropdown {
+    padding: 10px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.hidden-menu {
+    width: 100%;
+    display: none;
+    background-color: #000000;
+}
+.hidden-menu .dropdown-mobile {
+    display: none;
+    background-color: #000000;
+    width: 100%;
+}
+.dropdown-mobile a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    line-height: 2;
+    text-align: center;
+    padding: 5px;
+}
+.dropdown-mobile a:hover {
+    background-color: rgba(37, 37, 37, 0.5);
+}
+/* =================================== Navigation ================================ */
+.header {
+    width: 100%;
+    background-color: darkblue;
+}
+.header .navbar {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header .navbar .logo {
+    margin-left: 60px;
+    width: 100px;
+    height: 100px;
+    background-image: url('asset/images/logo/SBP.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header .navbar .menu {
+    margin: 10px;
+    /* background-color: white;     */
+}
+.header .menu .nav {
+    display: flex;
+    flex-flow: row;
+    height: 50px;
+    padding: 5px;
+    margin-right: 50px;
+}
+.header .nav ul li {
+    padding: 5px;
+    display: inline-block;
+    /* background-color: aqua; */
+    line-height: 35px;
+}
+.header .nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+.header li.dropdown-hover, .header li.dropbtn {
+    display: inline-block;
+}
+.header .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 100px;
+    z-index: 1;
+    transition: 1.5s;
+}
+.nav ul li .dropdown-content a {
+    color: black;
+    display: block;
+    text-decoration: none;
+    padding: 0 5px;
+}
+.header .dropdown-hover:hover .dropdown-content {
+    display: block;
+}
+.nav ul li a:hover {
+    border-bottom: 2px solid rgba(250, 247, 247);
+}
+/* =================================== Main Cover ================================ */
+main .cover {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: url("asset/images/cover.jpg");
+    background-size: contain;
+} 
+main .cover .bc-opc {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: rgb(0, 0, 139, 0.20);
+}
+main .cover .bg-title {
+    position: absolute;
+    height: 300px;
+    width: 600px;
+    padding: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 7px #000000;
+}
+main .cover .title h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+main .cover .title p {
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+}
+main h1 {
+    font-size: 2em;
+    color: #363636;
+}
+/* ===================================================== Main about ==================================================== */
+#about {
+    width: 600px;
+    /* height: 500px; */
+    margin: 0 auto;
+}
+#about .sub-title {
+    text-align: center;
+    margin-top: 50px;
+    /* font-size: 2em; */
+}
+#about .desc-about {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    line-height: 2em;
+    color: #555;
+}
+#about .description {
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+#about .dec-target span {
+    padding: 10px;
+    margin: 0 10px 0 0;
+}
+#about .desc-target span i {
+    color: lightgreen;
+    font-size: 15pt;
+}
+#about .desc-target {
+    margin-top: 20px;
+    color: #555;
+    line-height: 2;
+}
+#about #scrollTop {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    box-shadow: 5px 5px 15px;
+    border-radius: 50%;
+    display: none;
+    cursor: pointer;
+}
+#about #scrollTop i {
+    position: fixed;
+    bottom: 30px; right: 30px;
+    font-size: 50pt;
+    color: rgba(0, 0, 0, 0.9);
+    border-radius: 50px;
+}
+/* Main services */
+#services {
+    width: 100%;
+    padding: 10px 0 100px;
+    background-color: lavender;
+}
+#services .sub-title {
+    text-align: center;
+    margin-top: 20px;
+}
+#services h2 {
+    color: #363636;
+    font-size: 1.5em;
+}
+#services .sub-title-baja-ringan, .sub-title-konstruksi, .sub-title-property {
+    text-align: center;
+    margin: 20px;
+}
+/* Mengatur display flex baja ringan */
+#services .description {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+}
+#services .col {
+    width: 300px;
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid rgb(6, 26, 250, 0.5);
+    background-color: white;
+    /* display: none; */
+}
+#services .col:hover {
+    border: 1px solid rgba(6, 26, 250);
+    box-shadow: 5px 5px 30px 5px grey;
+}
+
+#services .description .desc-baja-ringan {
+    width: 300px;
+}
+/* Mengatur item per kolom 1 baja ringan */
+#services .image-baja-ringan-1 {
+    width: 300px;
+    height: 200px;
+    background-image: url("asset/images/baja-ringan/baja_ringan_1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#services .description .title {
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+    margin: 0 auto;
+    padding: 20px;
+    /* border-bottom: 1px solid gray; */
+}
+#services .description .desc {
+    width: 700px;
+    padding: 20px 0 50px 0;
+    text-align: center;
+    margin: 0 auto;
+    color: #555;
+    line-height: 2;
+}
+/* Mengatur item per kolom 2 baja ringan */
+#services .image-baja-ringan-2 {
+    width: 300px;
+    height: 200px;
+    background-image: url("asset/images/baja-ringan/baja_ringan_pagar.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Mengatur item per kolom 3 baja ringan */
+#services .image-baja-ringan-3 {
+    width: 300px;
+    height: 200px;
+    background-image: url("asset/images/baja-ringan/baja_ringan_kanopi.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#baja-ringan, #konstruksi {
+    margin-bottom: 50px;
+}
+/* Memasukan gambar kolom 1 konstruksi railling tangga */
+#konstruksi .image-konstruksi-1 {
+    width: 300px;
+    height: 200px;
+    background-image: url("asset/images/konstruksi/railling/railing_tangga.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Memasukan gambar kolom 2 konstruksi railling tangga */
+#konstruksi .image-konstruksi-2 {
+    width: 300px;
+    height: 200px;
+    background-image: url("asset/images/konstruksi/railling/railling_tangga_stainless.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Memasukan gambar kolom 3 konstruksi railling tangga */
+#konstruksi .image-konstruksi-3 {
+    width: 300px;
+    height: 200px;
+    background-image: url("asset/images/konstruksi/railling/railling_tangga_putar.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Memasukan gambar kolom 4 konstruksi teralis */
+#konstruksi .image-konstruksi-4 {
+    width: 300px;
+    height: 200px;
+    background-image: url("asset/images/konstruksi/teralis/teralis.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Memasukan gambar kolom 5 konstruksi teralis */
+#konstruksi .image-konstruksi-5 {
+    width: 300px;
+    height: 200px;
+    background-image: url("asset/images/konstruksi/teralis/teralis_2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Memasukan gambar kolom 6 konstruksi teralis */
+#konstruksi .image-konstruksi-6 {
+    width: 300px;
+    height: 200px;
+    background-image: url("asset/images/konstruksi/teralis/teralis_3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Memasukan gambar kolom 7 konstruksi pagar */
+#konstruksi .image-konstruksi-7 {
+    width: 300px;
+    height: 200px;
+    background-image: url("asset/images/konstruksi/pagar/pagar.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Memasukan gambar kolom 8 konstruksi pagar */
+#konstruksi .image-konstruksi-8 {
+    width: 300px;
+    height: 200px;
+    background-image: url("asset/images/konstruksi/pagar/pagar_2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Memasukan gambar kolom 9 konstruksi pagar */
+#konstruksi .image-konstruksi-9 {
+    width: 300px;
+    height: 200px;
+    background-image: url("asset/images/konstruksi/pagar/pagar_3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Memasukan gambar kolom 10 konstruksi pagar */
+#konstruksi .image-konstruksi-10 {
+    width: 300px;
+    height: 200px;
+    background-image: url("asset/images/konstruksi/baja/baja_berat_struktur_utama.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Memasukan gambar kolom 11 konstruksi pagar */
+#konstruksi .image-konstruksi-11 {
+    width: 300px;
+    height: 200px;
+    background-image: url("asset/images/konstruksi/baja/baja_berat_jembatan.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Masukan gambar kolom 1 property */
+#property .image-property-1 {
+    width: 300px;
+    height: 200px;
+    background-image: url("asset/images/property/rumah_minimalis.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Masukan gambar kolom 2 property */
+#property .image-property-2 {
+    width: 300px;
+    height: 200px;
+    background-image: url("asset/images/property/rumah_klasik.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Masukan gambar kolom 3 property */
+#property .image-property-3 {
+    width: 300px;
+    height: 200px;
+    background-image: url("asset/images/property/rumah_domus_3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* ======================== Footer ========================= */
+.btn-project {
+    width: 132px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.btn-project a {
+    width: 300px;
+    padding: 10px;
+    background-color: blue;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+.btn-project a:hover {
+    background-color: darkblue;
+}
+/* ======================== Footer ========================= */
+footer {
+    width: 100%;
+    padding: 50px 0 50px 0;
+    background-color: darkblue;
+}
+footer .wrapping-each-column {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+footer .column {
+    width: 300px;
+    color: white;
+    margin: 10px;
+}
+footer .head {
+    width: 250px;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+}
+footer .body {
+    width: 250px;
+    padding: 0 10px;
+    line-height: 2;
+}
+footer .body span {
+    font-size: 9pt;
+}
+footer .body .opacity {
+    opacity: 0.55;
+    cursor: pointer;
+}
+footer .body .opacity:hover {
+    opacity: unset;
+    font-size: 11pt;
+}
+footer .body a:hover {
+    font-size: 11pt;
+}
+footer .body i {
+    margin-right: 10px;
+    font-size: 11pt;
+}
+footer .body a {
+    font-size: 9pt;    
+    text-decoration: none;
+    color: white;
+}
+footer .copyright {
+    width: 100%;
+    margin-top: 50px;
+    padding: 0 0 50px 0;
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+}
+footer .copyright p {
+    font-size: 10pt;
+}
+/* ======================== Screen view mobile ========================= */
+@media screen and (max-width: 500px) {
+    .hidden-menu {
+        display: block;
+    }
+    .header .nav ul {
+        display: none;
+    }
+    .header .navbar .logo {
+        margin-left: 0;
+        margin: 10px;
+    }
+    main .cover {
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        height: 400px;
+    }
+    main .cover .bc-opc {
+        height: 400px;
+    } 
+    main .cover .bg-title {
+        height: 100px;
+        width: 300px;
+        top: 50%;
+    }
+    main .cover .title h1 {
+        font-size: 2em; 
+        margin-top: 5px;
+    }
+    /* ===================== Main ========================= */
+    main #about, main #about .desc {
+        width: 400px;
+    }
+    main #about .description {
+        width: 400px;
+    }
+    main #about .desc-target p {
+        width: 400px;
+    }
+    main #service .description, main #services .description, main #services .desc {
+        width: 400px;
+    }
+    footer .wrapping-each-column {
+        width: 100%;
+        flex-flow: row wrap;
+    }
+}
+

@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+.container .form-add-article, .container .form-update-article {
+    width: 500px;
+    margin: 0 auto;
+}
+.container .form-add-article form, .container .form-update-article form {
+    margin: 50px 0;
+}
+.judul, .gambar, .update-gambar, .deskripsi, .kategori {
+    margin-bottom: 10px;
+}
+.judul input {
+    width: 400px;
+    margin-left: 50px;
+    border: 2px solid #1a1919;
+    border-radius: 5px;
+    outline: none;
+}
+.gambar input[type="file"] {
+    margin-left: 27px;
+}
+.update-gambar img {
+    margin-left: 27px;
+}
+.update-gambar input {
+    margin-left: 92px;
+}
+.deskripsi textarea {
+    margin-left: 19px;
+    border: 2px solid #1a1919;
+    border-radius: 5px;
+    outline: none;
+    width: 400px;
+}
+.kategori select {
+    width: 255px;
+    margin-left: 26px;
+    border: 2px solid #1a1919;
+    border-radius: 5px;
+    outline: none;
+}
+.btn-add button  {
+    margin-left: 92px;
+    border: 2px solid #1a1919;
+    border-radius: 5px;
+    padding: 3px;
+    font-weight: bold;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+.error {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffecec;
+    border: 1px solid red;
+    border-radius: 10px;
+    box-shadow: 1px 0 3px red;
+}
+/* ====================== View Mobile =========================== */
+@media screen and (max-width: 500px) {
+    .container {
+        width: 400px;
+        margin: 0 auto;
+    }
+    .container .form-add-article {
+        width: 400px;
+        margin: 0 auto;
+    }
+    .gambar input[type="file"] {
+        width: 300px;
+        margin-left: 27px;
+    }
+    .judul input {
+        width: 300px;
+    }
+    .deskripsi textarea {
+        width: 300px;
+    }
+    .btn-add button {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: transparent;
+    color: black;
+    margin-left: 92px;
+    padding: 5px;
+    font-weight: bold;
+    outline: none;
+    }
+    .error {
+        width: 300px;
+    }
+}
